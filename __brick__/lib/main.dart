@@ -19,8 +19,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: "{{#pascalCase}}{{project_name}}{{/pascalCase}} App",
-      theme: ModTheme.standard,
+      title: "{{#pascalCase}}{{project_name}}{{/pascalCase}}",
+      theme: {{#pascalCase}}{{project_name}}{{/pascalCase}}Theme.standard,
       routerConfig: router,
     );
   }
