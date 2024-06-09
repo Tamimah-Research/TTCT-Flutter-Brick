@@ -7,7 +7,11 @@ final router = GoRouter(
   routes: [
     GoRoute(
       path: '/',
-      builder: (context, state) => Container(),
+      builder: (context, state) => const Scaffold(
+        body: Center(
+          child: Text('Change Route'),
+        ),
+      ),
     ),
   ],
 );

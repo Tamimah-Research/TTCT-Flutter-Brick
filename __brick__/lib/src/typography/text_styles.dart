@@ -111,6 +111,7 @@ class {{#pascalCase}}{{project_name}}{{/pascalCase}}TextStyle {
   static TextStyle get button {
     return _baseTextStyle.copyWith(
       fontSize: 18,
+      color: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.white,
       fontWeight: {{#pascalCase}}{{project_name}}{{/pascalCase}}FontWeight.medium,
     );
   }

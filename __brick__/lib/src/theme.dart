@@ -10,11 +10,13 @@ class {{#pascalCase}}{{project_name}}{{/pascalCase}}Theme {
   /// Standard `ThemeData` for {{#pascalCase}}{{project_name}}{{/pascalCase}} UI.
   static ThemeData get standard {
     return ThemeData(
+      useMaterial3: true,
       colorScheme:
           ColorScheme.fromSwatch(accentColor: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.primary),
       appBarTheme: _appBarTheme,
       elevatedButtonTheme: _elevatedButtonTheme,
       outlinedButtonTheme: _outlinedButtonTheme,
+      scaffoldBackgroundColor: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.whiteBackground,
       textTheme: _textTheme,
       dialogBackgroundColor: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.whiteBackground,
       dialogTheme: _dialogTheme,
@@ -157,7 +159,7 @@ class {{#pascalCase}}{{project_name}}{{/pascalCase}}Theme {
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.all(Radius.circular(30)),
         ),
-        backgroundColor: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.primary,
+        backgroundColor: {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors.green,
         fixedSize: const Size(208, 54),
       ),
     );

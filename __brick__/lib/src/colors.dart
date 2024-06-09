@@ -27,13 +27,13 @@ abstract class {{#pascalCase}}{{project_name}}{{/pascalCase}}Colors {
   static const Color transparent = Color(0x00000000);
 
   /// Primary
-  static const Color primary = Color(0xFF0000FF);
+  static const Color primary = Color(0xFF674668);
 
   /// Secondary
-  static const Color secondary = Color(0xFFFB5246);
+  static const Color secondary = Color(0xFFac8ee9);
 
   /// Green
-  static const Color green = Color(0xFF3fBC5C);
+  static const Color green = Color(0xFF80b5ab);
 
   /// Orange
   static const Color orange = Color(0xFFFFBB00);

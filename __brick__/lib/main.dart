@@ -1,4 +1,3 @@
-import 'app_ui.dart';
 import 'core/routes/router.dart';
 import 'service_collection/di.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +15,12 @@ void main() async{
   
   initDI();
    runApp(
+    /// Text(context.tr('title'))
+    /// Text('title').tr() //Not Recommended
+    /// var title = tr('title') //Static function
+    /// More about EasyLocalization https://pub.dev/packages/easy_localization
+    /// Change Locale -  context.setLocale(Locale('en', 'US'));
+
     EasyLocalization(
       supportedLocales: const [Locale('en', 'US'), Locale('ar', 'OM')],
       path: 'assets/translations',
