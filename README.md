@@ -1,5 +1,43 @@
 # TTCT Flutter Template Using Mason
- 
+## How to Use 🦀
+
+### Activate Mason Globally
+```dart
+dart pub gobal activate mason_cli
+```
+
+### Add Path to environment
+
+#### In windows
+```dart
+C:\Users\{your_user}\AppData\Local\Pub\Cache\bin
+```
+
+### Add Path to environment
+
+#### Go to the root of your project 
+```sh
+mason init
+```
+#### Add this dependency in Mason.yaml
+```sh
+  ttct_flutter:
+    git:
+      url: https://github.com/Tamimah-Research/TTCT-Flutter-Brick
+```
+#### To fetch dependency 
+
+```sh
+mason get
+```
+
+#### To Generate Code
+
+```sh
+mason make ttct_flutter
+```
+
+
 ## Output 📦
 
 ```sh
