@@ -3,53 +3,27 @@
 ## Output 📦
 
 ```sh
-├── .github
-│   ├── PULL_REQUEST_TEMPLATE.md
-│   ├── dependabot.yaml
-│   └── workflows
-│       └── main.yaml
-├── .gitignore
-├── .idea
-│   └── runConfigurations
-│       ├── development.xml
-│       ├── production.xml
-│       └── staging.xml
-├── .vscode
-│   ├── extensions.json
-│   └── launch.json
-├── LICENSE
-├── README.md
-├── analysis_options.yaml
-├── android
-├── coverage_badge.svg
-├── ios
-├── l10n.yaml
-├── lib
-│   ├── app
-│   │   ├── app.dart
-│   │   └── view
-│   ├── bootstrap.dart
-│   ├── counter
-│   │   ├── counter.dart
-│   │   ├── cubit
-│   │   └── view
-│   ├── l10n
-│   │   ├── arb
-│   │   └── l10n.dart
-│   ├── main_development.dart
-│   ├── main_production.dart
-│   └── main_staging.dart
-├── pubspec.lock
-├── pubspec.yaml
-├── test
-│   ├── app
-│   │   └── view
-│   ├── counter
-│   │   ├── cubit
-│   │   └── view
-│   └── helpers
-│       ├── helpers.dart
-│       └── pump_app.dart
-├── web
-└── windows   
+
+--project_name app
+├── app_ui
+│   ├── assets
+│   │   └── fonts
+│   │   │   └── .ttfs
+│   ├── lib
+│   │   ├── src
+│   │   │   ├── layout
+│   │   │   │   ├── breakpoints.dart
+│   │   │   │   └── layout.dart
+│   │   │   ├── typography
+│   │   │   │   ├── font_weights.dart
+│   │   │   │   ├── text_styles.dart
+│   │   │   │   └── typography.dart
+│   │   │   ├── widgets
+│   │   │   │   ├── responsive_layout_builder.dart
+│   │   │   │   └── widgets.dart
+│   │   │   ├── colors.dart
+│   │   │   └── theme.dart
+│   │   └── app_ui.dart
+│   └──
+└── ...
 ```
