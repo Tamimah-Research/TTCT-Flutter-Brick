@@ -1,72 +1,88 @@
 # TTCT Flutter Template Using Mason
+
 ## How to Use 🦀
 
 ### Activate Mason Globally
-```dart
-dart pub gobal activate mason_cli
+```sh
+dart pub global activate mason_cli
 ```
 
-### Add Path to environment
+### Add Path to Environment
 
-#### In windows
-```dart
+#### On Windows
+Add the following path to your environment variables:
+```sh
 C:\Users\{your_user}\AppData\Local\Pub\Cache\bin
 ```
 
-### Add Path to environment
+#### On Mac
+Add the following path to your `~/.zshrc` or `~/.bash_profile` (depending on your shell):
+```sh
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+```
+Then, run the following command to update your environment:
+```sh
+source ~/.zshrc
+# or
+source ~/.bash_profile
+```
 
-#### Go to the root of your project 
+### Initialize Mason in Your Project
+
+#### Go to the root of your project and run:
 ```sh
 mason init
 ```
-#### Add this dependency in Mason.yaml
-```sh
+
+### Add the TTCT Flutter Dependency
+
+#### In `mason.yaml`, add the following:
+```yaml
   ttct_flutter:
     git:
       url: https://github.com/Tamimah-Research/TTCT-Flutter-Brick
 ```
-#### To fetch dependency 
 
+### Fetch Dependencies
 ```sh
 mason get
 ```
 
-#### To Generate Code
-
+### Generate Code
 ```sh
 mason make ttct_flutter
 ```
 
-
 ## Output 📦
 
-```sh
+After running the code generation, you will get the following structure:
 
+```
 --project_name app
 ├── app_ui
 │   ├── assets
 │   │   └── fonts
-│   │   │   └── .ttfs
+│   │       └── .ttfs
 │   ├── lib
 │   │   ├── core
 │   │   │   ├── constants
-│   │   │   │   ├── constants.dart
+│   │   │   │   └── constants.dart
 │   │   │   ├── exception
 │   │   │   ├── extension
 │   │   │   ├── functions
 │   │   │   │   ├── date_fns.dart
 │   │   │   │   ├── validations.dart
-│   │   │   │   ├── constants.dart
+│   │   │   │   └── constants.dart
 │   │   │   ├── network
 │   │   │   │   ├── client_config.dart
 │   │   │   │   ├── end_points.dart
 │   │   │   │   ├── network_services.dart
-│   │   │   │   ├── response_wrapper.dart
+│   │   │   │   └── response_wrapper.dart
 │   │   │   ├── routes
 │   │   │   ├── shared_widgets
 │   │   ├── features
 │   │   ├── service_collection
-│   │   │   ├── di.dart
+│   │   │   └── di.dart
 │   │   ├── src
 │   │   │   ├── layout
 │   │   │   │   ├── breakpoints.dart
@@ -81,6 +97,7 @@ mason make ttct_flutter
 │   │   │   ├── colors.dart
 │   │   │   └── theme.dart
 │   │   └── app_ui.dart
-│   └──
 └── ...
 ```
+
+This detailed structure ensures you have a well-organized and modular Flutter project setup.
