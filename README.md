@@ -1,4 +1,4 @@
-# TTCT_Flutter_Brick
+# TTCT Flutter Template Using Mason
  
 ## Output 📦
 
