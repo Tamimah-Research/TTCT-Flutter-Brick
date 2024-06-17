@@ -20,6 +20,7 @@ dependencies:
   easy_localization: ^3.0.7
   logger: ^2.3.0
   flutter_easyloading: ^3.0.5
+  shimmer: ^3.0.0
   
 
 
